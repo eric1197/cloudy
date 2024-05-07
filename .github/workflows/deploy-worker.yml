@@ -15,8 +15,8 @@ jobs:
 
     - name: Deploy Worker
       run: |
-        curl -X PUT "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/workers/scripts/tings-cloudy/worker.js" \
+        curl -X PUT "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/workers/scripts/tings-cloudy" \
           -H "X-Auth-Email: ${{ secrets.CF_API_EMAIL }}" \
           -H "Authorization: Bearer ${{ secrets.CF_API_KEY }}" \
           -H "Content-Type: application/javascript" \
-          --data-binary "@_backend/worker.js"
+          --data-binary "@"
