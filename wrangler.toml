@@ -1,0 +1,4 @@
+[[r2_buckets]]
+binding = "ting-storage"
+bucket_name = "ting-storage"
+preview_bucket_name = "ting-storage"
